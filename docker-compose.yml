@@ -1,0 +1,10 @@
+services:
+  static-html:
+    image: some-content-nginx
+    container_name: some-content-nginx
+    ports:
+      - 8080:80
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.trainit.rule=Host(`trainit.trueberryless.org`)"
+    #   - "traefik.http.routers.trainit.entrypoints=http-entrypoint,https-entrypoint"
